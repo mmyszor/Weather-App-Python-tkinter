@@ -4,7 +4,7 @@ import sys
 import requests
 import json
 from datetime import datetime
-import customtkinter
+import customtkinter as ctk
 
 
 #Window
