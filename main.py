@@ -37,6 +37,8 @@ def cityenter():
     image_label.place(relx=0.45, rely=0.3)
     temp_textbox = customtkinter.CTkLabel(app,width=380, height=30, corner_radius=0.7,justify='center', text=str(temp_state) + "°C", font=("Arial", 25))
     temp_textbox.place(relx=0.5, rely=0.45, anchor=customtkinter.CENTER,)
+
+
 app = customtkinter.CTk()  # create CTk window like you do with the Tk window
 app.geometry("400x600")
 app.resizable(0,0)
