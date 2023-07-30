@@ -12,7 +12,7 @@ weather="static/images/error.png"
 customtkinter.set_appearance_mode("light")  # Modes: system (default), light, dark
 customtkinter.set_default_color_theme("dark-blue")  # Themes: blue (default), dark-blue, green
 def cityenter():
-    response = requests.get("https://api.openweathermap.org/data/2.5/forecast?q="+entry.get()+"&appid=568c7afedc03b362c7573f8e30486cc9")
+    response = requests.get("https://api.openweathermap.org/data/2.5/forecast?q="+entry.get()+"&appid=#YOUR API KEY#")
     data =response.json()
     cityname = data['city']['name']
     weather_state=data['list'][0]['weather'][0]['main']
